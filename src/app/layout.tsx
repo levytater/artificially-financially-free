@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ThemeProvider } from '@/components/theme-provider'
+import { CalculatorProvider } from '@/providers/calculator-provider'
 import './globals.css'
 
 const inter = Inter({
@@ -28,7 +29,9 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <NuqsAdapter>{children}</NuqsAdapter>
+          <NuqsAdapter>
+            <CalculatorProvider>{children}</CalculatorProvider>
+          </NuqsAdapter>
         </ThemeProvider>
       </body>
     </html>
