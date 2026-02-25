@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** Canadians can see exactly how renting and investing the difference compares to buying -- with real opportunity cost math -- and understand the results without a finance degree.
-**Current focus:** Phase 2: Housing Cost Engine
+**Current focus:** Phase 3: Investment & Comparison Engine
 
 ## Current Position
 
-Phase: 2 of 8 (Housing Cost Engine) -- COMPLETE
-Plan: 4 of 4 in current phase (all plans complete)
-Status: Phase Complete
-Last activity: 2026-02-25 -- Completed Plan 02-04 (Housing projection orchestrator)
+Phase: 3 of 8 (Investment & Comparison Engine)
+Plan: 2 of 3 in current phase (2 complete)
+Status: In Progress
+Last activity: 2026-02-25 -- Completed Plan 03-02 (Investment portfolio growth)
 
-Progress: [███░░░░░░░] 28%
+Progress: [████░░░░░░] 36%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: 4.3 min
-- Total execution time: 0.43 hours
+- Total plans completed: 8
+- Average duration: 4.0 min
+- Total execution time: 0.53 hours
 
 **By Phase:**
 
@@ -29,9 +29,10 @@ Progress: [███░░░░░░░] 28%
 |-------|-------|-------|----------|
 | 01 | 2 | 11 min | 5.5 min |
 | 02 | 4 | 15 min | 3.8 min |
+| 03 | 2 | 6 min | 3.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 4 min, 4 min, 4 min, 4 min, 3 min
+- Last 5 plans: 4 min, 4 min, 3 min, 3 min, 3 min
 - Trend: stable/improving
 
 *Updated after each plan completion*
@@ -69,6 +70,9 @@ Recent decisions affecting current work:
 - Property tax and maintenance use start-of-year home value assessment (purchase price for year 1)
 - Post-amortization years set mortgage costs to $0, only ongoing costs apply
 - Housing projection defaults resolved from province data and closing-cost-defaults
+- Investment portfolio growth uses monthly compounding: monthlyRate = (1 + annual)^(1/12) - 1
+- Negative monthly savings clamped to zero via Decimal.max() -- no withdrawals from portfolio
+- After-tax return uses capital gains 50% inclusion: afterTax = nominal * (1 - taxRate * 0.5)
 
 ### Pending Todos
 
@@ -83,5 +87,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 02-04-PLAN.md (Housing projection orchestrator -- Phase 2 complete)
+Stopped at: Completed 03-02-PLAN.md (Investment portfolio growth)
 Resume file: None
