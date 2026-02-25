@@ -16,9 +16,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **CALC-05**: Closing costs calculated for buying (legal fees, home inspection, LTT) and selling (realtor commission, legal fees)
 - [x] **CALC-06**: Home value appreciation compounded annually over the full time horizon
 - [x] **CALC-07**: Rent increase compounded at user-specified rate (CPI default) over the full time horizon
-- [ ] **CALC-08**: Break-even year identified as the first year where buying net worth exceeds renting net worth
+- [x] **CALC-08**: Break-even year identified as the first year where buying net worth exceeds renting net worth
 - [x] **CALC-09**: Renter's monthly savings (difference between buyer costs and rent) invested and compounded over time
-- [ ] **CALC-10**: Year-by-year net worth comparison produced for both renter (investment portfolio) and buyer (home equity minus costs)
+- [x] **CALC-10**: Year-by-year net worth comparison produced for both renter (investment portfolio) and buyer (home equity minus costs)
 - [x] **CALC-11**: First-time home buyer land transfer tax rebate applied when checkbox is selected, using province-specific rebate rules
 - [x] **CALC-12**: Investment returns modeled across three account types: TFSA (tax-free growth), RRSP (tax-deferred, taxed on withdrawal), and Non-registered (taxed annually on gains)
 - [x] **CALC-13**: Federal and provincial income tax estimated on investment gains using user's annual income and province
@@ -145,9 +145,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CALC-06 | Phase 2: Housing Cost Engine | Complete |
 | CALC-07 | Phase 2: Housing Cost Engine | Complete |
 | CALC-11 | Phase 2: Housing Cost Engine | Complete |
-| CALC-08 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-08 | Phase 3: Investment & Comparison Engine | Complete |
 | CALC-09 | Phase 3: Investment & Comparison Engine | Complete |
-| CALC-10 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-10 | Phase 3: Investment & Comparison Engine | Complete |
 | CALC-12 | Phase 3: Investment & Comparison Engine | Complete |
 | CALC-13 | Phase 3: Investment & Comparison Engine | Complete |
 | CALC-14 | Phase 3: Investment & Comparison Engine | Complete |
