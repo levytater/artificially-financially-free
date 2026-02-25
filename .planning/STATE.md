@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 4 of 8 (Input Panel & State Management)
-Plan: 4 of 5 in current phase (4 complete)
+Plan: 3 of 5 in current phase (3 complete)
 Status: In Progress
-Last activity: 2026-02-25 -- Completed Plan 04-04 (Input sidebar & real-time calculation)
+Last activity: 2026-02-25 -- Completed Plan 04-03 (Wizard modal with 3-step onboarding)
 
-Progress: [██████░░░░] 53%
+Progress: [█████░░░░░] 51%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
-- Average duration: 3.4 min
-- Total execution time: 0.73 hours
+- Total plans completed: 12
+- Average duration: 3.3 min
+- Total execution time: 0.65 hours
 
 **By Phase:**
 
@@ -30,10 +30,10 @@ Progress: [██████░░░░] 53%
 | 01 | 2 | 11 min | 5.5 min |
 | 02 | 4 | 15 min | 3.8 min |
 | 03 | 3 | 8 min | 2.7 min |
-| 04 | 4 | 13 min | 3.3 min |
+| 04 | 3 | 9 min | 3.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 2 min, 3 min, 3 min, 4 min
+- Last 5 plans: 3 min, 2 min, 2 min, 3 min, 4 min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -85,10 +85,12 @@ Recent decisions affecting current work:
 - [Phase 04]: Format-on-blur pattern for number inputs (raw while focused, formatted while blurred)
 - [Phase 04]: Stepper buttons excluded from tab order (tabIndex -1) - keyboard users use arrow keys
 - [Phase 04]: TimeHorizonInput combines slider and number field for quick + precise selection
-- [Phase 04]: Touch-based validation errors (show only after user interacts with field)
-- [Phase 04]: 300ms debounce delay for real-time calculation updates
-- [Phase 04]: Equal-weight blending of per-account returns in advanced mode (known simplification)
-- [Phase 04]: Advanced mode reveals default values without changing calculation results
+- [Phase 04]: onBlur callbacks added to input components for wizard validation
+- [Phase 04]: Wizard completion persisted to localStorage with 'aff-wizard-completed' key
+- [Phase 04]: Unclosable wizard modal (no outside click, no escape key) until completion
+- [Phase 04]: Educational content uses native HTML details/summary elements
+- [Phase 04]: Simple/Advanced mode choice presented as visual cards in wizard
+- [Phase 04]: Touched-field validation (errors only after blur)
 
 ### Pending Todos
 
@@ -103,5 +105,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 04-04-PLAN.md (Input sidebar & real-time calculation)
+Stopped at: Completed 04-03-PLAN.md (Wizard modal with 3-step onboarding)
 Resume file: None
