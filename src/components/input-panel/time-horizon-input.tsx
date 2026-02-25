@@ -16,6 +16,8 @@ export interface TimeHorizonInputProps {
   error?: string
   /** Additional container classes */
   className?: string
+  /** Optional callback fired after blur */
+  onBlur?: () => void
 }
 
 /**
@@ -28,6 +30,7 @@ export function TimeHorizonInput({
   label = 'Time Horizon',
   error,
   className,
+  onBlur,
 }: TimeHorizonInputProps) {
   const handleSliderChange = (values: number[]) => {
     onChange(values[0])
@@ -69,6 +72,7 @@ export function TimeHorizonInput({
           max={30}
           value={value}
           onChange={handleInputChange}
+          onBlur={onBlur}
           aria-label={`${label} (years)`}
           aria-invalid={!!error}
           aria-describedby={errorId}

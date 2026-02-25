@@ -31,6 +31,8 @@ export interface StepperInputProps {
   className?: string
   /** HTML id for the input element */
   id?: string
+  /** Optional callback fired after blur and validation */
+  onBlur?: () => void
 }
 
 /**
@@ -54,6 +56,7 @@ export function StepperInput({
   suffix,
   className,
   id,
+  onBlur,
 }: StepperInputProps) {
   const [displayValue, setDisplayValue] = useState(formatDisplay(value))
   const [isFocused, setIsFocused] = useState(false)
@@ -82,6 +85,10 @@ export function StepperInput({
     } else {
       // Parse failed, revert to formatted current value
       setDisplayValue(formatDisplay(value))
+    }
+    // Call optional onBlur callback after blur processing
+    if (onBlur) {
+      onBlur()
     }
   }
 

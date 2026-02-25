@@ -22,6 +22,8 @@ export interface PercentageInputProps {
   id?: string
   /** Additional container classes */
   className?: string
+  /** Optional callback fired after blur */
+  onBlur?: () => void
 }
 
 /**
@@ -38,6 +40,7 @@ export function PercentageInput({
   error,
   id,
   className,
+  onBlur,
 }: PercentageInputProps) {
   return (
     <StepperInput
@@ -52,6 +55,7 @@ export function PercentageInput({
       error={error}
       id={id}
       className={className}
+      onBlur={onBlur}
     />
   )
 }

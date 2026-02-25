@@ -22,6 +22,8 @@ export interface CurrencyInputProps {
   id?: string
   /** Additional container classes */
   className?: string
+  /** Optional callback fired after blur */
+  onBlur?: () => void
 }
 
 /**
@@ -38,6 +40,7 @@ export function CurrencyInput({
   error,
   id,
   className,
+  onBlur,
 }: CurrencyInputProps) {
   return (
     <StepperInput
@@ -52,6 +55,7 @@ export function CurrencyInput({
       error={error}
       id={id}
       className={className}
+      onBlur={onBlur}
     />
   )
 }

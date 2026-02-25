@@ -1,9 +1,12 @@
 import { AppSidebar } from '@/components/layout/app-sidebar'
 import { MainContent } from '@/components/layout/main-content'
+import { WizardModal } from '@/components/input-panel/wizard-modal'
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
+      <WizardModal />
+
       {/* Brand header bar */}
       <header className="flex h-16 shrink-0 items-center border-b border-border bg-card/50 px-6">
         <div className="flex items-baseline gap-3">
