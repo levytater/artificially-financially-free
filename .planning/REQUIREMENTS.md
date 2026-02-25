@@ -66,7 +66,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Architecture (v2 Readiness)
 
-- [ ] **ARCH-01**: All calculator inputs serializable to URL query parameters so shareable links can be added without re-architecting state management
+- [x] **ARCH-01**: All calculator inputs serializable to URL query parameters so shareable links can be added without re-architecting state management
 - [ ] **ARCH-02**: Component architecture supports external programmatic control of inputs (for future AI chatbot integration)
 - [ ] **ARCH-03**: Tooltip and explainer content stored as structured data objects (not hardcoded JSX) for future AI context consumption
 
@@ -134,7 +134,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| ARCH-01 | Phase 1: Project Foundation & Architecture | Pending |
+| ARCH-01 | Phase 1: Project Foundation & Architecture | Complete |
 | ARCH-02 | Phase 1: Project Foundation & Architecture | Pending |
 | ARCH-03 | Phase 1: Project Foundation & Architecture | Pending |
 | CALC-01 | Phase 2: Housing Cost Engine | Pending |
