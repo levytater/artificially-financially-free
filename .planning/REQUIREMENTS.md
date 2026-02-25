@@ -12,10 +12,10 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **CALC-01**: Mortgage payment calculated using Canadian semi-annual compounding (not US monthly)
 - [ ] **CALC-02**: CMHC insurance calculated by LTV tier (2.80%-4.00%) when down payment < 20%, including amortization surcharge and provincial sales tax
 - [ ] **CALC-03**: Provincial land transfer tax auto-calculated using province-specific marginal rate formulas for all provinces
-- [ ] **CALC-04**: Property tax calculated as annual percentage of property value with province-level defaults and user override
-- [ ] **CALC-05**: Closing costs calculated for buying (legal fees, home inspection, LTT) and selling (realtor commission, legal fees)
-- [ ] **CALC-06**: Home value appreciation compounded annually over the full time horizon
-- [ ] **CALC-07**: Rent increase compounded at user-specified rate (CPI default) over the full time horizon
+- [x] **CALC-04**: Property tax calculated as annual percentage of property value with province-level defaults and user override
+- [x] **CALC-05**: Closing costs calculated for buying (legal fees, home inspection, LTT) and selling (realtor commission, legal fees)
+- [x] **CALC-06**: Home value appreciation compounded annually over the full time horizon
+- [x] **CALC-07**: Rent increase compounded at user-specified rate (CPI default) over the full time horizon
 - [ ] **CALC-08**: Break-even year identified as the first year where buying net worth exceeds renting net worth
 - [ ] **CALC-09**: Renter's monthly savings (difference between buyer costs and rent) invested and compounded over time
 - [ ] **CALC-10**: Year-by-year net worth comparison produced for both renter (investment portfolio) and buyer (home equity minus costs)
@@ -140,10 +140,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CALC-01 | Phase 2: Housing Cost Engine | Pending |
 | CALC-02 | Phase 2: Housing Cost Engine | Pending |
 | CALC-03 | Phase 2: Housing Cost Engine | Pending |
-| CALC-04 | Phase 2: Housing Cost Engine | Pending |
-| CALC-05 | Phase 2: Housing Cost Engine | Pending |
-| CALC-06 | Phase 2: Housing Cost Engine | Pending |
-| CALC-07 | Phase 2: Housing Cost Engine | Pending |
+| CALC-04 | Phase 2: Housing Cost Engine | Complete |
+| CALC-05 | Phase 2: Housing Cost Engine | Complete |
+| CALC-06 | Phase 2: Housing Cost Engine | Complete |
+| CALC-07 | Phase 2: Housing Cost Engine | Complete |
 | CALC-11 | Phase 2: Housing Cost Engine | Pending |
 | CALC-08 | Phase 3: Investment & Comparison Engine | Pending |
 | CALC-09 | Phase 3: Investment & Comparison Engine | Pending |
