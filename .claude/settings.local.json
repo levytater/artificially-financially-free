@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(gsd:progress)",
+      "Skill(gsd:progress:*)",
+      "Skill(gsd:plan-phase)",
+      "Skill(gsd:plan-phase:*)",
+      "Skill(gsd:execute-phase)",
+      "Skill(gsd:execute-phase:*)"
+    ]
+  }
+}
