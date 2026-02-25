@@ -33,11 +33,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Component architecture exposes props/APIs that allow external programmatic control of input values
   4. Tooltip and explainer content is stored as structured data objects (JSON/TypeScript records), not hardcoded in JSX
   5. Decimal.js is integrated and a sample financial calculation demonstrates correct precision (no floating-point drift)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Scaffold Next.js project, install dependencies, configure Phantom-inspired dark theme with providers
+- [ ] 01-02-PLAN.md -- Architecture patterns (URL serialization, state management, content data) and shell layout with placeholder blocks
 
 ### Phase 2: Housing Cost Engine
 **Goal**: All housing-side financial calculations produce correct results validated against bank calculators and government sources
@@ -160,7 +160,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Foundation & Architecture | 0/2 | Not started | - |
+| 1. Project Foundation & Architecture | 0/2 | Planned | - |
 | 2. Housing Cost Engine | 0/3 | Not started | - |
 | 3. Investment & Comparison Engine | 0/3 | Not started | - |
 | 4. Input Panel & State Management | 0/3 | Not started | - |
