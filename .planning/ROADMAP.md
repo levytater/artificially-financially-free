@@ -58,21 +58,21 @@ Plans:
 - [ ] 02-04-PLAN.md -- Housing projection orchestrator composing all calculations into year-by-year output
 
 ### Phase 3: Investment & Comparison Engine
-**Goal**: Renter investment growth is modeled across three account types with tax implications, and the full rent-vs-buy net worth comparison produces a clear winner with break-even year
+**Goal**: Renter investment growth is modeled with a single portfolio (return % + tax rate %), and the full rent-vs-buy net worth comparison produces a clear winner with break-even year
 **Depends on**: Phase 2
 **Requirements**: CALC-08, CALC-09, CALC-10, CALC-12, CALC-13, CALC-14
 **Success Criteria** (what must be TRUE):
   1. Renter monthly savings (difference between total buyer costs and rent) are calculated correctly and invested each month
-  2. Investment returns are modeled separately for TFSA (tax-free growth), RRSP (tax-deferred, taxed on withdrawal), and Non-registered (taxed annually) accounts
-  3. Federal and provincial income tax on investment gains is estimated using the user's annual income and province
+  2. Investment returns are modeled as a single portfolio with return % and tax rate % using capital gains 50% inclusion rate
+  3. Federal and provincial income tax on investment gains is estimated using the user's annual income and province, with manual override support
   4. Year-by-year net worth comparison shows renter portfolio value vs buyer home equity minus remaining costs for every year of the time horizon
   5. Break-even year is identified as the first year where buying net worth exceeds renting net worth (or "never" if buying never wins)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md — TDD income tax bracket data (federal + 10 provinces), combined marginal rate calculation, inflation deflation, and investment type definitions
+- [ ] 03-02-PLAN.md — TDD investment portfolio growth with after-tax returns, monthly compounding, lump sum + contributions
+- [ ] 03-03-PLAN.md — TDD rent-vs-buy comparison orchestrator composing all calculations into year-by-year comparison with break-even analysis
 
 ### Phase 4: Input Panel & State Management
 **Goal**: Users can enter all calculator parameters through an intuitive input panel that validates input, manages state, and triggers real-time recalculation
@@ -163,7 +163,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 |-------|----------------|--------|-----------|
 | 1. Project Foundation & Architecture | 2/2 | Complete | 2026-02-25 |
 | 2. Housing Cost Engine | 1/4 | Complete    | 2026-02-25 |
-| 3. Investment & Comparison Engine | 0/3 | Not started | - |
+| 3. Investment & Comparison Engine | 0/3 | Planned | - |
 | 4. Input Panel & State Management | 0/3 | Not started | - |
 | 5. Verdict & Results Display | 0/2 | Not started | - |
 | 6. Chart Visualizations | 0/3 | Not started | - |
