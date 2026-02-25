@@ -36,7 +36,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **INPUT-08**: Per-account return fine-tuning inputs (TFSA, RRSP, Non-registered) for users with different risk profiles per account
 - [x] **INPUT-09**: Annual gross income input used for federal and provincial tax estimation on investment gains
 - [x] **INPUT-10**: Simple/Advanced mode toggle where Simple hides multi-account complexity and makes reasonable allocation assumptions
-- [ ] **INPUT-11**: Collapsible input sections with sensible defaults visible and advanced inputs (maintenance %, selling costs, individual account returns) expandable
+- [x] **INPUT-11**: Collapsible input sections with sensible defaults visible and advanced inputs (maintenance %, selling costs, individual account returns) expandable
 
 ### Results & Visualizations
 
@@ -62,7 +62,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **UX-01**: Responsive layout that works on mobile (320px+) and desktop with touch-friendly input controls
 - [ ] **UX-02**: Clean, modern fintech UI with visual polish comparable to PWL Capital's calculator
 - [ ] **UX-03**: Smooth chart animations when inputs change, with performance-safe degradation on mobile
-- [ ] **UX-04**: Real-time calculation updates triggered as user adjusts any input (debounced for performance)
+- [x] **UX-04**: Real-time calculation updates triggered as user adjusts any input (debounced for performance)
 
 ### Architecture (v2 Readiness)
 
@@ -161,8 +161,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INPUT-08 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-09 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-10 | Phase 4: Input Panel & State Management | Complete |
-| INPUT-11 | Phase 4: Input Panel & State Management | Pending |
-| UX-04 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-11 | Phase 4: Input Panel & State Management | Complete |
+| UX-04 | Phase 4: Input Panel & State Management | Complete |
 | VIZ-01 | Phase 5: Verdict & Results Display | Pending |
 | VIZ-02 | Phase 5: Verdict & Results Display | Pending |
 | VIZ-07 | Phase 5: Verdict & Results Display | Pending |
