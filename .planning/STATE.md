@@ -9,30 +9,30 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 
 ## Current Position
 
-Phase: 2 of 8 (Housing Cost Engine)
-Plan: 3 of 4 in current phase
-Status: In Progress
-Last activity: 2026-02-25 -- Completed Plan 02-03 (Land transfer tax & FTHB rebates)
+Phase: 2 of 8 (Housing Cost Engine) -- COMPLETE
+Plan: 4 of 4 in current phase (all plans complete)
+Status: Phase Complete
+Last activity: 2026-02-25 -- Completed Plan 02-04 (Housing projection orchestrator)
 
-Progress: [███░░░░░░░] 23%
+Progress: [███░░░░░░░] 28%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: 4.6 min
-- Total execution time: 0.38 hours
+- Total plans completed: 6
+- Average duration: 4.3 min
+- Total execution time: 0.43 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01 | 2 | 11 min | 5.5 min |
-| 02 | 3 | 12 min | 4.0 min |
+| 02 | 4 | 15 min | 3.8 min |
 
 **Recent Trend:**
-- Last 5 plans: 7 min, 4 min, 4 min, 4 min, 4 min
-- Trend: stable
+- Last 5 plans: 4 min, 4 min, 4 min, 4 min, 3 min
+- Trend: stable/improving
 
 *Updated after each plan completion*
 
@@ -66,6 +66,9 @@ Recent decisions affecting current work:
 - BC FTHB maxRebate corrected from $8,000 to Infinity (full PTT exemption, not capped)
 - LttResult interface added to housing.ts for typed LTT calculation results
 - Generic calculateMarginalTax designed for Phase 3 income tax reuse
+- Property tax and maintenance use start-of-year home value assessment (purchase price for year 1)
+- Post-amortization years set mortgage costs to $0, only ongoing costs apply
+- Housing projection defaults resolved from province data and closing-cost-defaults
 
 ### Pending Todos
 
@@ -80,5 +83,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 02-03-PLAN.md (Land transfer tax, marginal rate calculator, FTHB rebates)
+Stopped at: Completed 02-04-PLAN.md (Housing projection orchestrator -- Phase 2 complete)
 Resume file: None
