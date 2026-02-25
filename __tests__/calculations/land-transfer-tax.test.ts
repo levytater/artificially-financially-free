@@ -234,11 +234,11 @@ describe('calculateFthbRebate - Ontario', () => {
   it('$368,333 purchase (exact threshold): rebate close to $4,000', () => {
     // LTT on $368,333:
     // 0.5% on $55K = $275, 1.0% on $195K = $1,950, 1.5% on $118,333 = $1,774.995
-    // Total = $3,999.995 -> rounds to $4,000.00 at 2dp
-    // Since grossTax <= maxRebate, rebate = grossTax
+    // Total = $3,999.995 -> min(3999.995, 4000) = 3999.995
+    // toFixed(2) with ROUND_HALF_UP: 3999.995 rounds to 4000.00
     const grossTax = new Decimal(3999.995)
     const rebate = calculateFthbRebate(grossTax, new Decimal(368333), 'ON')
-    expect(rebate.toFixed(2)).toBe('3999.99') // min(3999.995, 4000) = 3999.995 -> toFixed(2) = 4000.00 due to rounding
+    expect(rebate.toFixed(2)).toBe('4000.00')
   })
 
   it('not a first-time buyer (use calculateLandTransferTax with firstTimeBuyer=false)', () => {

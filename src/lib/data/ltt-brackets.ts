@@ -55,7 +55,7 @@ export const LTT_CONFIG: Readonly<Record<ProvinceCode, ProvinceLttConfig>> = {
       { from: 3000000, to: Infinity, rate: 0.05 },
     ],
     fthbRebate: {
-      maxRebate: 8000,
+      maxRebate: Infinity, // Full exemption -- entire PTT is waived up to threshold
       fullExemptionUpTo: 835000,
       partialExemptionUpTo: 860000,
     },
