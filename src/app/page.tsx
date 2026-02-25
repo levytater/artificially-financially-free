@@ -1,13 +1,26 @@
-import { Button } from '@/components/ui/button'
+import { AppSidebar } from '@/components/layout/app-sidebar'
+import { MainContent } from '@/components/layout/main-content'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-6">
-      <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-        Artificially Financially Free
-      </h1>
-      <p className="text-lg text-muted-foreground">Rent vs Buy Calculator</p>
-      <Button size="lg">Coming Soon</Button>
+    <div className="flex min-h-screen flex-col">
+      {/* Brand header bar */}
+      <header className="flex h-16 shrink-0 items-center border-b border-border bg-card/50 px-6">
+        <div className="flex items-baseline gap-3">
+          <h1 className="text-lg font-bold tracking-tight text-primary">
+            Artificially Financially Free
+          </h1>
+          <span className="hidden text-sm text-muted-foreground sm:inline">
+            Canadian Rent vs Buy Calculator
+          </span>
+        </div>
+      </header>
+
+      {/* Main layout: sidebar + content */}
+      <div className="flex flex-1 flex-col lg:flex-row">
+        <AppSidebar />
+        <MainContent />
+      </div>
     </div>
   )
 }
