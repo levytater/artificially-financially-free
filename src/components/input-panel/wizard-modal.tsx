@@ -51,8 +51,8 @@ export function WizardModal() {
           </DialogDescription>
         </DialogHeader>
 
-        {/* Step content area with min-height to prevent layout shifts */}
-        <div className="min-h-[300px] py-4">
+        {/* Step content area with scroll for long content (e.g. Step 3 with Learn More expanded) */}
+        <div className="min-h-[300px] max-h-[60vh] overflow-y-auto py-4">
           {currentStep === 1 && <WizardStep1 />}
           {currentStep === 2 && <WizardStep2 />}
           {currentStep === 3 && <WizardStep3 />}

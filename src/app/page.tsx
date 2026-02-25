@@ -7,8 +7,8 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <WizardModal />
 
-      {/* Brand header bar */}
-      <header className="flex h-16 shrink-0 items-center border-b border-border bg-card/50 px-6">
+      {/* Brand header bar — sticky so sidebar can anchor below it */}
+      <header className="sticky top-0 z-20 flex h-16 shrink-0 items-center border-b border-border bg-background/95 px-6 backdrop-blur-sm">
         <div className="flex items-baseline gap-3">
           <h1 className="text-lg font-bold tracking-tight text-primary">
             Artificially Financially Free
