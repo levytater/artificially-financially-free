@@ -1,7 +1,7 @@
 # Requirements: Artificially Financially Free
 
 **Defined:** 2026-02-24
-**Core Value:** Canadians can see exactly how renting and investing the difference compares to buying — with real opportunity cost math — and understand the results without a finance degree.
+**Core Value:** Canadians can see exactly how renting and investing the difference compares to buying -- with real opportunity cost math -- and understand the results without a finance degree.
 
 ## v1 Requirements
 
@@ -55,7 +55,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **EDU-02**: Plain-English verdict summary explaining the result, key cost drivers, and what would change the outcome
 - [ ] **EDU-03**: Chart annotations explaining how to read each visualization and what the lines/bars represent
 - [ ] **EDU-04**: Pre-written explainers for key financial concepts (opportunity cost, CMHC insurance, semi-annual compounding, land transfer tax, marginal tax rates)
-- [ ] **EDU-05**: Simple mode includes beginner guidance on TFSA, RRSP, and Non-registered accounts — what they are, key differences, and how to check contribution room
+- [ ] **EDU-05**: Simple mode includes beginner guidance on TFSA, RRSP, and Non-registered accounts -- what they are, key differences, and how to check contribution room
 
 ### Design & UX
 
@@ -86,12 +86,12 @@ Deferred to future release. Tracked but not in current roadmap.
 - **UX-05**: Dark mode toggle with light/dark theme support
 - **UX-06**: Toronto municipal land transfer tax (additional LTT for Toronto buyers)
 - **UX-07**: HBP (Home Buyer Plan) RRSP withdrawal modeling for first-time buyers
-- **UX-08**: Year selector on charts — click any year to see detailed comparison at that point
+- **UX-08**: Year selector on charts -- click any year to see detailed comparison at that point
 
 ### AI Chatbot (v2)
 
-- **AI-01**: Floating AI chatbot that acts as interactive tooltips — users can ask about any input or result
-- **AI-02**: Conversational input completion — entire calculator can be filled via chat interface
+- **AI-01**: Floating AI chatbot that acts as interactive tooltips -- users can ask about any input or result
+- **AI-02**: Conversational input completion -- entire calculator can be filled via chat interface
 - **AI-03**: Context-aware explanations that reference user's specific numbers and scenario
 
 ## v3+ Requirements
@@ -134,13 +134,57 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| — | — | Populated during roadmap creation |
+| ARCH-01 | Phase 1: Project Foundation & Architecture | Pending |
+| ARCH-02 | Phase 1: Project Foundation & Architecture | Pending |
+| ARCH-03 | Phase 1: Project Foundation & Architecture | Pending |
+| CALC-01 | Phase 2: Housing Cost Engine | Pending |
+| CALC-02 | Phase 2: Housing Cost Engine | Pending |
+| CALC-03 | Phase 2: Housing Cost Engine | Pending |
+| CALC-04 | Phase 2: Housing Cost Engine | Pending |
+| CALC-05 | Phase 2: Housing Cost Engine | Pending |
+| CALC-06 | Phase 2: Housing Cost Engine | Pending |
+| CALC-07 | Phase 2: Housing Cost Engine | Pending |
+| CALC-11 | Phase 2: Housing Cost Engine | Pending |
+| CALC-08 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-09 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-10 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-12 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-13 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-14 | Phase 3: Investment & Comparison Engine | Pending |
+| INPUT-01 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-02 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-03 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-04 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-05 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-06 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-07 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-08 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-09 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-10 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-11 | Phase 4: Input Panel & State Management | Pending |
+| UX-04 | Phase 4: Input Panel & State Management | Pending |
+| VIZ-01 | Phase 5: Verdict & Results Display | Pending |
+| VIZ-02 | Phase 5: Verdict & Results Display | Pending |
+| VIZ-07 | Phase 5: Verdict & Results Display | Pending |
+| VIZ-08 | Phase 5: Verdict & Results Display | Pending |
+| VIZ-03 | Phase 6: Chart Visualizations | Pending |
+| VIZ-04 | Phase 6: Chart Visualizations | Pending |
+| VIZ-05 | Phase 6: Chart Visualizations | Pending |
+| VIZ-06 | Phase 6: Chart Visualizations | Pending |
+| UX-03 | Phase 6: Chart Visualizations | Pending |
+| EDU-01 | Phase 7: Explanations & Education | Pending |
+| EDU-02 | Phase 7: Explanations & Education | Pending |
+| EDU-03 | Phase 7: Explanations & Education | Pending |
+| EDU-04 | Phase 7: Explanations & Education | Pending |
+| EDU-05 | Phase 7: Explanations & Education | Pending |
+| UX-01 | Phase 8: Responsive Design & Polish | Pending |
+| UX-02 | Phase 8: Responsive Design & Polish | Pending |
 
 **Coverage:**
 - v1 requirements: 45 total
-- Mapped to phases: 0
-- Unmapped: 45 (pending roadmap creation)
+- Mapped to phases: 45
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-24*
-*Last updated: 2026-02-24 after initial definition*
+*Last updated: 2026-02-24 after roadmap creation*
