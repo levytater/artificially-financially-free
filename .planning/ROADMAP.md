@@ -85,12 +85,14 @@ Plans:
   4. Simple/Advanced mode toggle hides multi-account complexity in Simple mode and reveals full controls in Advanced mode
   5. Collapsible input sections show essential inputs by default and expand to reveal advanced parameters (maintenance %, selling costs, individual account returns)
   6. Calculation results update in real-time as user adjusts any input, with debounced performance (no lag or jank)
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
-- [ ] 04-03: TBD
+- [ ] 04-01-PLAN.md -- Extend CalculatorState, defaults, parsers, validation, formatting, and tooltip content
+- [ ] 04-02-PLAN.md -- Build reusable input components (StepperInput, CurrencyInput, PercentageInput, ProvinceSelector, TimeHorizonInput, CheckboxInput)
+- [ ] 04-03-PLAN.md -- First-visit 3-step wizard modal with educational content and Simple/Advanced mode choice
+- [ ] 04-04-PLAN.md -- Input sidebar with collapsible sections, mode toggle, and debounced real-time calculation wiring
+- [ ] 04-05-PLAN.md -- Visual verification checkpoint for complete Phase 4
 
 ### Phase 5: Verdict & Results Display
 **Goal**: Users see a clear, understandable rent-vs-buy verdict with supporting summary metrics and detailed cost breakdowns
@@ -164,7 +166,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | 1. Project Foundation & Architecture | 2/2 | Complete | 2026-02-25 |
 | 2. Housing Cost Engine | 1/4 | Complete    | 2026-02-25 |
 | 3. Investment & Comparison Engine | 0/3 | Complete    | 2026-02-25 |
-| 4. Input Panel & State Management | 0/3 | Not started | - |
+| 4. Input Panel & State Management | 0/5 | Not started | - |
 | 5. Verdict & Results Display | 0/2 | Not started | - |
 | 6. Chart Visualizations | 0/3 | Not started | - |
 | 7. Explanations & Education | 0/2 | Not started | - |
