@@ -18,16 +18,26 @@ import {
  * Each parser validates and converts URL string params to the correct type.
  */
 export const calculatorParsers = {
-  purchasePrice: parseAsInteger.withDefault(600000),
+  purchasePrice: parseAsInteger.withDefault(500000),
   downPaymentPercent: parseAsFloat.withDefault(20),
   mortgageRate: parseAsFloat.withDefault(5.5),
   amortizationYears: parseAsInteger.withDefault(25),
   monthlyRent: parseAsInteger.withDefault(2000),
   province: parseAsString.withDefault('ON'),
-  timeHorizon: parseAsInteger.withDefault(25),
+  timeHorizon: parseAsInteger.withDefault(10),
   firstTimeBuyer: parseAsBoolean.withDefault(false),
   annualIncome: parseAsInteger.withDefault(75000),
-  // More parsers added in Phase 4 when additional inputs are introduced
+  advancedMode: parseAsBoolean.withDefault(false),
+  investmentReturn: parseAsFloat.withDefault(6.0),
+  tfsaReturn: parseAsFloat.withDefault(6.0),
+  rrspReturn: parseAsFloat.withDefault(6.0),
+  nonRegisteredReturn: parseAsFloat.withDefault(6.0),
+  appreciationRate: parseAsFloat.withDefault(3.0),
+  rentIncreaseRate: parseAsFloat.withDefault(2.0),
+  inflationRate: parseAsFloat.withDefault(2.5),
+  maintenancePercent: parseAsFloat.withDefault(1.5),
+  sellingCostsPercent: parseAsFloat.withDefault(6.0),
+  homeInsurance: parseAsInteger.withDefault(2400),
 }
 
 /**
@@ -45,4 +55,15 @@ export const calculatorUrlKeys: UrlKeys<typeof calculatorParsers> = {
   timeHorizon: 'years',
   firstTimeBuyer: 'ftb',
   annualIncome: 'income',
+  advancedMode: 'adv',
+  investmentReturn: 'return',
+  tfsaReturn: 'tfsa',
+  rrspReturn: 'rrsp',
+  nonRegisteredReturn: 'nonreg',
+  appreciationRate: 'appr',
+  rentIncreaseRate: 'rentup',
+  inflationRate: 'infl',
+  maintenancePercent: 'maint',
+  sellingCostsPercent: 'sell',
+  homeInsurance: 'ins',
 }

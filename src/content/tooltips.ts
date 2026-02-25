@@ -65,4 +65,60 @@ export const tooltips: Record<string, TooltipContent> = {
       'Your gross annual income before tax. This is used to estimate the **marginal tax rate** on investment gains in the renting scenario. Higher income means higher taxes on capital gains and dividends, which affects the renter-investor comparison.',
     learnMore: '#marginal-tax-rates',
   },
+  advancedMode: {
+    label: 'Advanced Mode',
+    description:
+      'Advanced mode reveals per-account investment return controls (TFSA, RRSP, Non-registered) and additional rate inputs. Use this if you want to model different return expectations for different account types, or if you want granular control over rates like maintenance, appreciation, and inflation. Most users can stick with Simple mode.',
+  },
+  investmentReturn: {
+    label: 'Investment Return',
+    description:
+      'The expected annual return on your investments as a renter. Historically, Canadian and US stock markets have averaged **6-7% nominal returns** over the long term. This is the master dial that sets returns for all account types (TFSA, RRSP, Non-registered) unless you override them in Advanced mode.',
+  },
+  tfsaReturn: {
+    label: 'TFSA Return',
+    description:
+      'Expected annual return on investments in your **Tax-Free Savings Account (TFSA)**. Growth and withdrawals are completely tax-free, making this the most tax-efficient account. In Advanced mode, you can override the master investment return if you allocate different assets to your TFSA.',
+  },
+  rrspReturn: {
+    label: 'RRSP Return',
+    description:
+      'Expected annual return on investments in your **Registered Retirement Savings Plan (RRSP)**. Growth is tax-deferred -- you pay no tax until withdrawal (typically in retirement at a lower tax rate). In Advanced mode, you can set a different return if your RRSP holds different assets than your TFSA.',
+  },
+  nonRegisteredReturn: {
+    label: 'Non-Registered Return',
+    description:
+      'Expected annual return on investments in a **non-registered (taxable) account**. Capital gains are taxed annually (50% inclusion rate), making this the least tax-efficient account. In Advanced mode, you can model different asset allocations with different expected returns.',
+  },
+  appreciationRate: {
+    label: 'Home Appreciation',
+    description:
+      'The expected annual rate of home price growth. Historically, Canadian home prices have appreciated at **3-5% annually** over the long term, though this varies significantly by region and time period. This rate affects the home equity you build and the proceeds when you eventually sell.',
+    learnMore: '#home-appreciation',
+  },
+  rentIncreaseRate: {
+    label: 'Rent Increase',
+    description:
+      'The expected annual rent increase. Most provinces have rent control guidelines -- for example, Ontario typically allows **2-3% annual increases** tied to CPI. This affects how much you save each year as a renter compared to a fixed mortgage payment.',
+  },
+  inflationRate: {
+    label: 'Inflation Rate',
+    description:
+      'The expected annual inflation rate. The Bank of Canada targets **2% inflation**, though actual inflation has varied (3-4% in recent years). Inflation erodes the real value of future dollars, affecting both housing costs and investment returns in real terms.',
+  },
+  maintenancePercent: {
+    label: 'Maintenance Cost',
+    description:
+      'Annual home maintenance and repairs as a percentage of home value. The rule of thumb is **1-2% annually** -- for a $500K home, that is $5,000-$10,000 per year. This includes HVAC servicing, roof repairs, appliance replacements, landscaping, and other upkeep that renters do not pay.',
+  },
+  sellingCostsPercent: {
+    label: 'Selling Costs',
+    description:
+      'Transaction costs when you sell the home as a percentage of the sale price. In Canada, this typically includes **realtor commission (5% of sale price)** plus **legal fees, staging, and other closing costs (~1%)**. Total: around 6% of the final sale price.',
+  },
+  homeInsurance: {
+    label: 'Home Insurance',
+    description:
+      'Annual homeowner insurance premium. This covers property damage, liability, and other risks. Typical cost is **$1,500-$3,000 per year** depending on home value, location, and coverage. Renters pay tenant insurance instead, which is much cheaper (~$200-$400/year).',
+  },
 }
