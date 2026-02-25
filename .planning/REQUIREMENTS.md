@@ -9,8 +9,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Calculator Engine
 
-- [ ] **CALC-01**: Mortgage payment calculated using Canadian semi-annual compounding (not US monthly)
-- [ ] **CALC-02**: CMHC insurance calculated by LTV tier (2.80%-4.00%) when down payment < 20%, including amortization surcharge and provincial sales tax
+- [x] **CALC-01**: Mortgage payment calculated using Canadian semi-annual compounding (not US monthly)
+- [x] **CALC-02**: CMHC insurance calculated by LTV tier (2.80%-4.00%) when down payment < 20%, including amortization surcharge and provincial sales tax
 - [x] **CALC-03**: Provincial land transfer tax auto-calculated using province-specific marginal rate formulas for all provinces
 - [x] **CALC-04**: Property tax calculated as annual percentage of property value with province-level defaults and user override
 - [x] **CALC-05**: Closing costs calculated for buying (legal fees, home inspection, LTT) and selling (realtor commission, legal fees)
@@ -137,8 +137,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | ARCH-01 | Phase 1: Project Foundation & Architecture | Complete |
 | ARCH-02 | Phase 1: Project Foundation & Architecture | Complete |
 | ARCH-03 | Phase 1: Project Foundation & Architecture | Complete |
-| CALC-01 | Phase 2: Housing Cost Engine | Pending |
-| CALC-02 | Phase 2: Housing Cost Engine | Pending |
+| CALC-01 | Phase 2: Housing Cost Engine | Complete |
+| CALC-02 | Phase 2: Housing Cost Engine | Complete |
 | CALC-03 | Phase 2: Housing Cost Engine | Complete |
 | CALC-04 | Phase 2: Housing Cost Engine | Complete |
 | CALC-05 | Phase 2: Housing Cost Engine | Complete |
