@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 4 of 8 (Input Panel & State Management)
-Plan: 1 of 5 in current phase (1 complete)
+Plan: 2 of 5 in current phase (2 complete)
 Status: In Progress
-Last activity: 2026-02-25 -- Completed Plan 04-01 (Calculator state & utilities foundation)
+Last activity: 2026-02-25 -- Completed Plan 04-02 (Input components foundation)
 
-Progress: [████░░░░░░] 44%
+Progress: [█████░░░░░] 49%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 3.4 min
-- Total execution time: 0.57 hours
+- Total plans completed: 11
+- Average duration: 3.3 min
+- Total execution time: 0.62 hours
 
 **By Phase:**
 
@@ -30,11 +30,11 @@ Progress: [████░░░░░░] 44%
 | 01 | 2 | 11 min | 5.5 min |
 | 02 | 4 | 15 min | 3.8 min |
 | 03 | 3 | 8 min | 2.7 min |
-| 04 | 1 | 2 min | 2.0 min |
+| 04 | 2 | 5 min | 2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 3 min, 3 min, 3 min, 2 min, 2 min
-- Trend: improving
+- Last 5 plans: 3 min, 3 min, 2 min, 2 min, 3 min
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -81,6 +81,10 @@ Recent decisions affecting current work:
 - [Phase 04]: Maintenance default set to 1.5% (research-backed) vs 1% in closing-cost-defaults
 - [Phase 04]: Canadian down payment validation tiers: <=500K: 5%, 500K-1M: 5%+10%, >1M: 20%
 - [Phase 04]: Per-account return rates default to master dial (6%), overridable in Advanced mode
+- [Phase 04]: StepperInput as generic base component for CurrencyInput and PercentageInput (DRY principle)
+- [Phase 04]: Format-on-blur pattern for number inputs (raw while focused, formatted while blurred)
+- [Phase 04]: Stepper buttons excluded from tab order (tabIndex -1) - keyboard users use arrow keys
+- [Phase 04]: TimeHorizonInput combines slider and number field for quick + precise selection
 
 ### Pending Todos
 
@@ -95,5 +99,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 04-01-PLAN.md (Calculator state & utilities foundation)
+Stopped at: Completed 04-02-PLAN.md (Input components foundation)
 Resume file: None

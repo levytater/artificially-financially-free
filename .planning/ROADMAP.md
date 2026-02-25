@@ -88,8 +88,8 @@ Plans:
 **Plans**: 5 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Extend CalculatorState, defaults, parsers, validation, formatting, and tooltip content
-- [ ] 04-02-PLAN.md -- Build reusable input components (StepperInput, CurrencyInput, PercentageInput, ProvinceSelector, TimeHorizonInput, CheckboxInput)
+- [x] 04-01-PLAN.md -- Extend CalculatorState, defaults, parsers, validation, formatting, and tooltip content
+- [x] 04-02-PLAN.md -- Build reusable input components (StepperInput, CurrencyInput, PercentageInput, ProvinceSelector, TimeHorizonInput, CheckboxInput)
 - [ ] 04-03-PLAN.md -- First-visit 3-step wizard modal with educational content and Simple/Advanced mode choice
 - [ ] 04-04-PLAN.md -- Input sidebar with collapsible sections, mode toggle, and debounced real-time calculation wiring
 - [ ] 04-05-PLAN.md -- Visual verification checkpoint for complete Phase 4

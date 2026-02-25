@@ -26,15 +26,15 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Inputs & Controls
 
-- [ ] **INPUT-01**: Province selector that auto-adjusts land transfer tax formula, property tax defaults, first-time buyer rebate, and marginal tax rates
+- [x] **INPUT-01**: Province selector that auto-adjusts land transfer tax formula, property tax defaults, first-time buyer rebate, and marginal tax rates
 - [x] **INPUT-02**: Purchase price, down payment percentage, mortgage rate, and amortization period inputs with sensible Canadian defaults
-- [ ] **INPUT-03**: Monthly rent input with currency formatting
-- [ ] **INPUT-04**: Time horizon slider ranging from 1 to 30 years
-- [ ] **INPUT-05**: First-time home buyer checkbox that triggers LTT rebate calculation and HBP eligibility note
+- [x] **INPUT-03**: Monthly rent input with currency formatting
+- [x] **INPUT-04**: Time horizon slider ranging from 1 to 30 years
+- [x] **INPUT-05**: First-time home buyer checkbox that triggers LTT rebate calculation and HBP eligibility note
 - [x] **INPUT-06**: Adjustable home appreciation rate, rent increase rate, and inflation rate with historical Canadian defaults
 - [x] **INPUT-07**: Master expected return dial that sets baseline investment return across all three account types
 - [x] **INPUT-08**: Per-account return fine-tuning inputs (TFSA, RRSP, Non-registered) for users with different risk profiles per account
-- [ ] **INPUT-09**: Annual gross income input used for federal and provincial tax estimation on investment gains
+- [x] **INPUT-09**: Annual gross income input used for federal and provincial tax estimation on investment gains
 - [x] **INPUT-10**: Simple/Advanced mode toggle where Simple hides multi-account complexity and makes reasonable allocation assumptions
 - [ ] **INPUT-11**: Collapsible input sections with sensible defaults visible and advanced inputs (maintenance %, selling costs, individual account returns) expandable
 
@@ -151,15 +151,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CALC-12 | Phase 3: Investment & Comparison Engine | Complete |
 | CALC-13 | Phase 3: Investment & Comparison Engine | Complete |
 | CALC-14 | Phase 3: Investment & Comparison Engine | Complete |
-| INPUT-01 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-01 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-02 | Phase 4: Input Panel & State Management | Complete |
-| INPUT-03 | Phase 4: Input Panel & State Management | Pending |
-| INPUT-04 | Phase 4: Input Panel & State Management | Pending |
-| INPUT-05 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-03 | Phase 4: Input Panel & State Management | Complete |
+| INPUT-04 | Phase 4: Input Panel & State Management | Complete |
+| INPUT-05 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-06 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-07 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-08 | Phase 4: Input Panel & State Management | Complete |
-| INPUT-09 | Phase 4: Input Panel & State Management | Pending |
+| INPUT-09 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-10 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-11 | Phase 4: Input Panel & State Management | Pending |
 | UX-04 | Phase 4: Input Panel & State Management | Pending |
