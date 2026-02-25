@@ -21,8 +21,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **CALC-10**: Year-by-year net worth comparison produced for both renter (investment portfolio) and buyer (home equity minus costs)
 - [x] **CALC-11**: First-time home buyer land transfer tax rebate applied when checkbox is selected, using province-specific rebate rules
 - [x] **CALC-12**: Investment returns modeled across three account types: TFSA (tax-free growth), RRSP (tax-deferred, taxed on withdrawal), and Non-registered (taxed annually on gains)
-- [ ] **CALC-13**: Federal and provincial income tax estimated on investment gains using user's annual income and province
-- [ ] **CALC-14**: Inflation adjustment applied to normalize future dollar values to present purchasing power
+- [x] **CALC-13**: Federal and provincial income tax estimated on investment gains using user's annual income and province
+- [x] **CALC-14**: Inflation adjustment applied to normalize future dollar values to present purchasing power
 
 ### Inputs & Controls
 
@@ -149,8 +149,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CALC-09 | Phase 3: Investment & Comparison Engine | Complete |
 | CALC-10 | Phase 3: Investment & Comparison Engine | Pending |
 | CALC-12 | Phase 3: Investment & Comparison Engine | Complete |
-| CALC-13 | Phase 3: Investment & Comparison Engine | Pending |
-| CALC-14 | Phase 3: Investment & Comparison Engine | Pending |
+| CALC-13 | Phase 3: Investment & Comparison Engine | Complete |
+| CALC-14 | Phase 3: Investment & Comparison Engine | Complete |
 | INPUT-01 | Phase 4: Input Panel & State Management | Pending |
 | INPUT-02 | Phase 4: Input Panel & State Management | Pending |
 | INPUT-03 | Phase 4: Input Panel & State Management | Pending |

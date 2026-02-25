@@ -73,6 +73,7 @@ Recent decisions affecting current work:
 - Investment portfolio growth uses monthly compounding: monthlyRate = (1 + annual)^(1/12) - 1
 - Negative monthly savings clamped to zero via Decimal.max() -- no withdrawals from portfolio
 - After-tax return uses capital gains 50% inclusion: afterTax = nominal * (1 - taxRate * 0.5)
+- [Phase 03]: findMarginalRate as local function -- simpler direct bracket lookup vs importing calculateMarginalTax
 
 ### Pending Todos
 
