@@ -129,13 +129,15 @@ Canadians can see exactly how renting and investing the difference compares to b
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Single rate for v1 (not multi-period) | Simpler UX, less intimidating for users | — Pending |
+| Multi-account model for v1 (TFSA/RRSP/Non-reg) with master dial + simple mode | Stronger differentiator than single rate; simple mode keeps it accessible; replaces original "single rate" decision | — Pending |
 | Helper tooltips over AI chatbot for v1 | Chatbot adds complexity; tooltips deliver 80% of the value | — Pending |
 | Both PDF + shareable link for lead capture | Maximizes conversion — PDF for trust, link for return visits | — Pending |
 | Province-level (not city-level) for v1 | Reduces data requirements, still captures key tax differences | — Pending |
 | Client-side calculations only | No backend needed, faster UX, simpler architecture | — Pending |
 | PWL Capital as primary UI inspiration | Best-in-class fintech calculator UI, animated charts, collapsible panels | — Pending |
 | Asset allocation selector for expected returns | Simpler than PWL's dividend/capital gains breakdown, still meaningful | — Pending |
+| Defer lead capture to v2 | Validate calculator first; lead capture adds integration complexity without proving core value | — Pending |
+| Architecture for shareable links in v1 | Serialize all state to URL params so v2 shareable links need only a "copy link" button | — Pending |
 
 ---
-*Last updated: 2026-02-24 after initialization*
+*Last updated: 2026-02-24 after requirements definition*
