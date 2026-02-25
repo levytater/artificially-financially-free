@@ -22,7 +22,7 @@
  */
 import { Decimal } from '@/lib/decimal'
 import { LTT_CONFIG } from '@/lib/data/ltt-brackets'
-import type { ProvinceCode, TaxBracket } from '@/types/housing'
+import type { LttResult, ProvinceCode, TaxBracket } from '@/types/housing'
 
 /**
  * Calculate tax using marginal rate brackets.
@@ -143,7 +143,7 @@ export function calculateLandTransferTax(
   purchasePrice: Decimal,
   province: ProvinceCode,
   firstTimeBuyer: boolean = false
-): { grossTax: Decimal; rebate: Decimal; netTax: Decimal } {
+): LttResult {
   let grossTax: Decimal
 
   // Special handling for provinces with fee formulas (not marginal bracket systems)

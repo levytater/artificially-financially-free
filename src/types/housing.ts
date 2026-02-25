@@ -51,6 +51,16 @@ export interface ProvinceLttConfig {
   readonly fthbRebate: FthbRebateConfig | null
 }
 
+/** Result of land transfer tax calculation */
+export interface LttResult {
+  /** Gross LTT before any rebates */
+  grossTax: Decimal
+  /** FTHB rebate amount (0 if not applicable) */
+  rebate: Decimal
+  /** Net LTT after rebate (grossTax - rebate) */
+  netTax: Decimal
+}
+
 // ---------------------------------------------------------------------------
 // CMHC Insurance
 // ---------------------------------------------------------------------------
