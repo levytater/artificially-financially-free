@@ -49,12 +49,13 @@ Plans:
   3. Provincial land transfer tax is correctly calculated for all provinces using marginal rate formulas, and first-time buyer rebates reduce tax correctly
   4. A complete homeowner cost projection (mortgage payments, property tax, maintenance, insurance, closing costs, appreciation) is produced year-by-year over a configurable time horizon
   5. All calculations use Decimal.js and produce identical results when run multiple times (no floating-point drift over 30-year projections)
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md -- Province data constants, housing types, and simple calculation functions (property tax, closing costs, appreciation, rent)
+- [ ] 02-02-PLAN.md -- TDD mortgage payment (semi-annual compounding) and CMHC insurance premium calculation
+- [ ] 02-03-PLAN.md -- TDD land transfer tax with marginal rate brackets and first-time home buyer rebates for all 10 provinces
+- [ ] 02-04-PLAN.md -- Housing projection orchestrator composing all calculations into year-by-year output
 
 ### Phase 3: Investment & Comparison Engine
 **Goal**: Renter investment growth is modeled across three account types with tax implications, and the full rent-vs-buy net worth comparison produces a clear winner with break-even year
@@ -161,7 +162,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Foundation & Architecture | 2/2 | Complete | 2026-02-25 |
-| 2. Housing Cost Engine | 0/3 | Not started | - |
+| 2. Housing Cost Engine | 0/4 | Not started | - |
 | 3. Investment & Comparison Engine | 0/3 | Not started | - |
 | 4. Input Panel & State Management | 0/3 | Not started | - |
 | 5. Verdict & Results Display | 0/2 | Not started | - |
