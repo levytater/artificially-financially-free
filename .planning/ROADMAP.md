@@ -12,7 +12,7 @@ This roadmap delivers a Canadian Rent vs. Buy Calculator that combines deep oppo
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Project Foundation & Architecture** - Next.js scaffolding with architecture patterns that support future shareable links and AI chatbot
+- [x] **Phase 1: Project Foundation & Architecture** - Next.js scaffolding with architecture patterns that support future shareable links and AI chatbot
 - [ ] **Phase 2: Housing Cost Engine** - Pure TypeScript calculation functions for Canadian mortgage math, CMHC insurance, land transfer tax, and all homeowner costs
 - [ ] **Phase 3: Investment & Comparison Engine** - Multi-account investment modeling (TFSA/RRSP/Non-reg), tax estimation, net worth comparison, and break-even analysis
 - [ ] **Phase 4: Input Panel & State Management** - All calculator inputs with Zustand state, validation, collapsible sections, simple/advanced modes, and real-time recalculation
@@ -160,7 +160,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Foundation & Architecture | 0/2 | Planned | - |
+| 1. Project Foundation & Architecture | 2/2 | Complete | 2026-02-25 |
 | 2. Housing Cost Engine | 0/3 | Not started | - |
 | 3. Investment & Comparison Engine | 0/3 | Not started | - |
 | 4. Input Panel & State Management | 0/3 | Not started | - |

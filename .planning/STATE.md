@@ -9,29 +9,29 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 
 ## Current Position
 
-Phase: 1 of 8 (Project Foundation & Architecture)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-02-25 -- Completed Plan 01-01 (Project scaffold + dark theme)
+Phase: 1 of 8 (Project Foundation & Architecture) -- COMPLETE
+Plan: 2 of 2 in current phase (all plans complete)
+Status: Phase Complete
+Last activity: 2026-02-25 -- Completed Plan 01-02 (Architecture & shell layout)
 
-Progress: [█░░░░░░░░░] 6%
+Progress: [██░░░░░░░░] 12%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 7 min
-- Total execution time: 0.12 hours
+- Total plans completed: 2
+- Average duration: 5.5 min
+- Total execution time: 0.18 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01 | 1 | 7 min | 7 min |
+| 01 | 2 | 11 min | 5.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 7 min
-- Trend: baseline
+- Last 5 plans: 7 min, 4 min
+- Trend: improving
 
 *Updated after each plan completion*
 
@@ -50,6 +50,11 @@ Recent decisions affecting current work:
 - Dark-first theme in :root block (no .dark selector) since Phantom-inspired design is dark-only for v1
 - Inter font as sole font family; display font deferred to Phase 8
 - NuqsAdapter added from day one for future URL serialization support
+- React Context over Zustand for calculator state -- sufficient for single-page with <20 inputs
+- localStorage persistence via use-local-storage-state -- SSR-safe with cross-tab sync
+- nuqs createSerializer with clearOnDefault for share URLs -- only non-default values in URL
+- TypeScript objects with markdown strings for content data -- not JSON, not hardcoded JSX
+- Custom flex sidebar layout instead of shadcn/ui Sidebar component -- simpler for input panel
 
 ### Pending Todos
 
@@ -64,5 +69,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 01-01-PLAN.md (Project scaffold + dark theme)
+Stopped at: Completed 01-02-PLAN.md (Architecture & shell layout) -- Phase 1 COMPLETE
 Resume file: None
