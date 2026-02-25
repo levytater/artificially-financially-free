@@ -71,9 +71,9 @@ describe('calculatePortfolioGrowth', () => {
     // Year 1 contributions should be 0
     expect(result[0].contributions.toNumber()).toBe(0)
 
-    // Final balance: $100K * (1.0595)^5 ~ $133,469
-    // Tolerance of $5 for monthly vs annual compounding difference
-    expect(result[4].endBalance.toNumber()).toBeCloseTo(133469, -1)
+    // Final balance: $100K * (1.0595)^5 = $133,507.24
+    // (Plan estimated ~$133,469 using incorrect manual math; verified via Decimal.js)
+    expect(result[4].endBalance.toNumber()).toBeCloseTo(133507, -1)
   })
 
   it('contributions only, no lump sum -- $1,000/month at 6% for 3 years', () => {
