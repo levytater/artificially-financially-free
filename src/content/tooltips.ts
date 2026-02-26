@@ -121,4 +121,35 @@ export const tooltips: Record<string, TooltipContent> = {
     description:
       'Annual homeowner insurance premium. This covers property damage, liability, and other risks. Typical cost is **$1,500-$3,000 per year** depending on home value, location, and coverage. Renters pay tenant insurance instead, which is much cheaper (~$200-$400/year).',
   },
+  // Result metric tooltips
+  renterNetWorth: {
+    label: 'Renter Net Worth',
+    description:
+      'The total value of the renter-investor\'s portfolio at the end of your time horizon. This includes the initial lump sum (what you would have spent on a down payment and closing costs) plus all monthly savings invested over time, with after-tax returns compounded monthly.',
+  },
+  buyerNetWorth: {
+    label: 'Buyer Net Worth',
+    description:
+      'The homeowner\'s net position at the end of your time horizon after selling. Calculated as: home value (with appreciation) minus remaining mortgage balance minus selling costs (realtor commission + legal fees, typically ~6% of sale price).',
+  },
+  dollarAdvantage: {
+    label: 'Dollar Advantage',
+    description:
+      'The absolute dollar difference in net worth between the winning and losing strategy at the end of your time horizon. This is the key bottom-line number — how much more wealth the better option produces.',
+  },
+  percentageAdvantage: {
+    label: 'Percentage Advantage',
+    description:
+      'The dollar advantage expressed as a percentage of the winning strategy\'s final net worth. Helps contextualize whether the dollar difference is significant relative to the total wealth involved.',
+  },
+  breakEvenYear: {
+    label: 'Break-Even Year',
+    description:
+      'The first year where buying\'s net worth surpasses renting\'s net worth (or vice versa). Before this year, the other strategy is winning. If shown as \'Never\', the winning strategy maintains its lead for the entire time horizon.',
+  },
+  marginalTaxRate: {
+    label: 'Marginal Tax Rate',
+    description:
+      'Your combined federal + provincial marginal tax rate, auto-calculated from your annual income and province. This rate determines how much tax you pay on investment capital gains in the renting scenario. Capital gains use a 50% inclusion rate, so only half the gain is taxed at this rate.',
+  },
 }

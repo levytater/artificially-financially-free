@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { ThemeProvider } from '@/components/theme-provider'
 import { CalculatorProvider } from '@/providers/calculator-provider'
+import { TooltipProvider } from '@/components/ui/tooltip'
 import './globals.css'
 
 const inter = Inter({
@@ -30,7 +31,11 @@ export default function RootLayout({
           enableSystem
         >
           <NuqsAdapter>
-            <CalculatorProvider>{children}</CalculatorProvider>
+            <CalculatorProvider>
+              <TooltipProvider delayDuration={200}>
+                {children}
+              </TooltipProvider>
+            </CalculatorProvider>
           </NuqsAdapter>
         </ThemeProvider>
       </body>
