@@ -9,12 +9,12 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 
 ## Current Position
 
-Phase: 5 of 8 (Verdict & Results Display)
-Plan: 2 of 2 in current phase (2 complete)
-Status: Complete
-Last activity: 2026-02-25 -- Completed Plan 05-02 (Visual verification checkpoint - APPROVED)
+Phase: 5.1 of 8 (Results Refinement & Audit Trail) — INSERTED decimal phase
+Plan: 0 of TBD in current phase (not yet planned)
+Status: Pending planning
+Last activity: 2026-02-25 -- Inserted Phase 5.1 gap-closure after Phase 5 approval
 
-Progress: [██████░░░░] 58%
+Progress: [██████░░░░] 58% (roadmap structure updated for gap-closure)
 
 ## Performance Metrics
 
@@ -40,6 +40,10 @@ Progress: [██████░░░░] 58%
 *Updated after each plan completion*
 
 ## Accumulated Context
+
+### Roadmap Evolution
+
+- Phase 5.1 inserted after Phase 5 (2026-02-25): Results Refinement & Audit Trail — gap-closure for visual hierarchy, helper tooltips, audit breakdown tab, and print/PDF support (INSERTED - URGENT gap-closure after user feedback)
 
 ### Decisions
 
