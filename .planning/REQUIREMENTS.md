@@ -40,14 +40,14 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Results & Visualizations
 
-- [ ] **VIZ-01**: Clear verdict displaying "Rent" or "Buy" with dollar advantage amount and plain-English reasoning for the recommendation
-- [ ] **VIZ-02**: Summary cards showing Rent final net worth, Buy final net worth, dollar and percentage advantage, and break-even year
+- [x] **VIZ-01**: Clear verdict displaying "Rent" or "Buy" with dollar advantage amount and plain-English reasoning for the recommendation
+- [x] **VIZ-02**: Summary cards showing Rent final net worth, Buy final net worth, dollar and percentage advantage, and break-even year
 - [ ] **VIZ-03**: Animated net worth area chart comparing rent and buy wealth trajectories over the full time horizon
 - [ ] **VIZ-04**: Cash flow bar chart showing annual costs for renter versus buyer across the time horizon
 - [ ] **VIZ-05**: Renter savings chart showing investment portfolio growth across account types over time
 - [ ] **VIZ-06**: "Mortgage Paid Off" marker displayed on chart timeline at the amortization end year
-- [ ] **VIZ-07**: Detailed cost breakdown table showing initial costs, recurring annual costs, opportunity costs, and net proceeds at sale
-- [ ] **VIZ-08**: Side-by-side comparison panel at a user-selected year showing all key metrics for that point in time
+- [x] **VIZ-07**: Detailed cost breakdown table showing initial costs, recurring annual costs, opportunity costs, and net proceeds at sale
+- [x] **VIZ-08**: Side-by-side comparison panel at a user-selected year showing all key metrics for that point in time
 
 ### Explanations & Education
 
@@ -163,10 +163,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INPUT-10 | Phase 4: Input Panel & State Management | Complete |
 | INPUT-11 | Phase 4: Input Panel & State Management | Complete |
 | UX-04 | Phase 4: Input Panel & State Management | Complete |
-| VIZ-01 | Phase 5: Verdict & Results Display | Pending |
-| VIZ-02 | Phase 5: Verdict & Results Display | Pending |
-| VIZ-07 | Phase 5: Verdict & Results Display | Pending |
-| VIZ-08 | Phase 5: Verdict & Results Display | Pending |
+| VIZ-01 | Phase 5: Verdict & Results Display | Complete |
+| VIZ-02 | Phase 5: Verdict & Results Display | Complete |
+| VIZ-07 | Phase 5: Verdict & Results Display | Complete |
+| VIZ-08 | Phase 5: Verdict & Results Display | Complete |
 | VIZ-03 | Phase 6: Chart Visualizations | Pending |
 | VIZ-04 | Phase 6: Chart Visualizations | Pending |
 | VIZ-05 | Phase 6: Chart Visualizations | Pending |
