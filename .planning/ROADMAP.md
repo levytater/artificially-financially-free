@@ -103,11 +103,11 @@ Plans:
   2. Summary cards show Rent final net worth, Buy final net worth, dollar and percentage advantage, and break-even year at a glance
   3. Detailed cost breakdown table shows initial costs, recurring annual costs, opportunity costs, and net proceeds at sale for both renter and buyer
   4. Side-by-side comparison panel lets the user select any year and see all key metrics for that specific point in time
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
+- [ ] 05-01-PLAN.md -- All result components (verdict card, summary cards, chart tabs, theme toggle, cost breakdown, year comparison) and full MainContent integration
+- [ ] 05-02-PLAN.md -- Visual verification checkpoint for complete Phase 5 results display
 
 ### Phase 6: Chart Visualizations
 **Goal**: Users can explore rent-vs-buy outcomes through animated, interactive charts that make the financial story visually intuitive
