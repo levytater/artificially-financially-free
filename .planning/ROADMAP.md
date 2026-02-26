@@ -108,6 +108,18 @@ Plans:
 Plans:
 - [x] 05-01-PLAN.md -- All result components (verdict card, summary cards, chart tabs, theme toggle, cost breakdown, year comparison) and full MainContent integration
 
+### Phase 05.1: Results Refinement & Audit Trail: enhanced visual hierarchy, comprehensive explanatory tooltips, detailed audit breakdown tab matching Excel structure, and print/PDF support for exported reports (INSERTED)
+
+**Goal:** Every result metric has an explanatory tooltip, a Math Breakdown tab shows full year-by-year audit data, and users can export a clean PDF report -- addressing all 8 gap-closure items from Phase 5 verification
+**Depends on:** Phase 5
+**Requirements:** UX-02, UX-04, EDU-01, EDU-02, VIZ-01, VIZ-02, VIZ-07, VIZ-08 (refinements)
+**Plans:** 3 plans
+
+Plans:
+- [ ] 05.1-01-PLAN.md -- InfoTooltip component, result tooltips, visual hierarchy (dollar advantage emphasis, income explanation, theme toggle label)
+- [ ] 05.1-02-PLAN.md -- Audit breakdown table with year-by-year calculation transparency and Math Breakdown tab
+- [ ] 05.1-03-PLAN.md -- Print/PDF export with react-to-print and visual verification checkpoint
+
 ### Phase 6: Chart Visualizations
 **Goal**: Users can explore rent-vs-buy outcomes through animated, interactive charts that make the financial story visually intuitive
 **Depends on**: Phase 5
