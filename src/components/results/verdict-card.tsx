@@ -4,8 +4,13 @@ import { useMemo } from 'react'
 import type { ComparisonResult } from '@/types/investment'
 import { calculateVerdict } from '@/lib/verdict'
 import { verdictText } from '@/content/verdict-text'
-import { formatCurrencyDecimal } from '@/lib/formatting'
+import { formatCurrencyDecimal, formatPercentageDecimal } from '@/lib/formatting'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { InfoTooltip } from '@/components/ui/info-tooltip'
+import { tooltips } from '@/content/tooltips'
+import { useCalculator } from '@/providers/calculator-provider'
+import { PROVINCE_NAMES } from '@/lib/data/provinces'
+import Decimal from 'decimal.js'
 
 interface VerdictCardProps {
   results: ComparisonResult
@@ -18,6 +23,7 @@ interface VerdictCardProps {
  * explanation based on the comparison results.
  */
 export function VerdictCard({ results }: VerdictCardProps) {
+  const { state } = useCalculator()
   const verdict = useMemo(() => calculateVerdict(results), [results])
 
   // Determine border color based on verdict
@@ -49,7 +55,7 @@ export function VerdictCard({ results }: VerdictCardProps) {
       .replace('{{buyerNetWorth}}', formatCurrencyDecimal(verdict.buyerFinal))
   }
 
-  // Break-even text
+  // Break-even text with tooltip
   let breakEvenText: string
   if (verdict.breakEvenYear === 'never') {
     if (verdict.decision === 'rent') {
@@ -63,6 +69,10 @@ export function VerdictCard({ results }: VerdictCardProps) {
     breakEvenText = `Buying becomes the better choice starting in Year ${verdict.breakEvenYear}.`
   }
 
+  // Tax rate explanation
+  const provinceName = PROVINCE_NAMES[state.province as keyof typeof PROVINCE_NAMES]
+  const taxRateExplanation = `Based on your ${formatCurrencyDecimal(new Decimal(state.annualIncome), false)} annual income in ${provinceName}, your combined federal + provincial marginal rate is ${formatPercentageDecimal(results.marginalTaxRate)}. This affects taxation of investment gains as a renter.`
+
   return (
     <Card className={`border-t-4 ${borderColor}`}>
       <CardHeader>
@@ -71,8 +81,19 @@ export function VerdictCard({ results }: VerdictCardProps) {
       <CardContent className="space-y-3">
         <p className="text-sm leading-relaxed">{summaryText}</p>
         {breakEvenText && verdict.decision !== 'tie' && (
-          <p className="text-sm text-muted-foreground">{breakEvenText}</p>
+          <div className="flex items-start gap-1.5">
+            <p className="text-sm text-muted-foreground">{breakEvenText}</p>
+            <InfoTooltip content={tooltips.breakEvenYear.description} />
+          </div>
         )}
+        <div className="pt-2 border-t">
+          <div className="flex items-start gap-1.5">
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              {taxRateExplanation}
+            </p>
+            <InfoTooltip content={tooltips.marginalTaxRate.description} />
+          </div>
+        </div>
       </CardContent>
     </Card>
   )

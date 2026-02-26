@@ -33,7 +33,7 @@ export function MainContent() {
           <div className={isCalculating ? 'opacity-50' : ''}>
             <VerdictCard results={results} />
             <div className="mt-6">
-              <ChartTabs />
+              <ChartTabs results={results} />
             </div>
             <div className="mt-6">
               <SummaryCards results={results} />

@@ -4,6 +4,8 @@ import { useMemo } from 'react'
 import type { ComparisonResult } from '@/types/investment'
 import { formatCurrencyDecimal } from '@/lib/formatting'
 import { Card, CardContent } from '@/components/ui/card'
+import { InfoTooltip } from '@/components/ui/info-tooltip'
+import { tooltips } from '@/content/tooltips'
 import Decimal from 'decimal.js'
 
 interface SummaryCardsProps {
@@ -54,9 +56,12 @@ export function SummaryCards({ results }: SummaryCardsProps) {
       {/* Renter Final Net Worth */}
       <Card>
         <CardContent className="pt-6">
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">
-            Renter Net Worth
-          </p>
+          <div className="flex items-center gap-1.5">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground">
+              Renter Net Worth
+            </p>
+            <InfoTooltip content={tooltips.renterNetWorth.description} />
+          </div>
           <p className="mt-2 text-xl font-bold">
             {formatCurrencyDecimal(metrics.renterFinal, shouldUseCompact(metrics.renterFinal))}
           </p>
@@ -66,9 +71,12 @@ export function SummaryCards({ results }: SummaryCardsProps) {
       {/* Buyer Final Net Worth */}
       <Card>
         <CardContent className="pt-6">
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">
-            Buyer Net Worth
-          </p>
+          <div className="flex items-center gap-1.5">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground">
+              Buyer Net Worth
+            </p>
+            <InfoTooltip content={tooltips.buyerNetWorth.description} />
+          </div>
           <p className="mt-2 text-xl font-bold">
             {formatCurrencyDecimal(metrics.buyerFinal, shouldUseCompact(metrics.buyerFinal))}
           </p>
@@ -76,12 +84,15 @@ export function SummaryCards({ results }: SummaryCardsProps) {
       </Card>
 
       {/* Dollar Advantage (Emphasized) */}
-      <Card className="border-primary bg-primary/5">
+      <Card className="border-2 border-primary bg-primary/5">
         <CardContent className="pt-6">
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">
-            Dollar Advantage
-          </p>
-          <p className="mt-2 text-2xl font-bold">
+          <div className="flex items-center gap-1.5">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground">
+              Dollar Advantage
+            </p>
+            <InfoTooltip content={tooltips.dollarAdvantage.description} />
+          </div>
+          <p className="mt-2 text-3xl font-bold">
             {formatCurrencyDecimal(metrics.advantage, shouldUseCompact(metrics.advantage))}
           </p>
           <p className="mt-1 text-xs text-muted-foreground">{metrics.winner}</p>
@@ -91,9 +102,12 @@ export function SummaryCards({ results }: SummaryCardsProps) {
       {/* Percentage Advantage */}
       <Card>
         <CardContent className="pt-6">
-          <p className="text-xs uppercase tracking-wide text-muted-foreground">
-            Percentage Advantage
-          </p>
+          <div className="flex items-center gap-1.5">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground">
+              Percentage Advantage
+            </p>
+            <InfoTooltip content={tooltips.percentageAdvantage.description} />
+          </div>
           <p className="mt-2 text-xl font-bold">
             {metrics.percentAdvantage.toFixed(1)}%
           </p>
