@@ -9,7 +9,7 @@ export default function Home() {
       <WizardModal />
 
       {/* Brand header bar — sticky so sidebar can anchor below it */}
-      <header className="sticky top-0 z-20 flex h-16 shrink-0 items-center justify-between border-b border-border bg-background/95 px-6 backdrop-blur-sm">
+      <header className="no-print sticky top-0 z-20 flex h-16 shrink-0 items-center justify-between border-b border-border bg-background/95 px-6 backdrop-blur-sm">
         <div className="flex items-baseline gap-3">
           <h1 className="text-lg font-bold tracking-tight text-primary">
             Artificially Financially Free
@@ -23,7 +23,9 @@ export default function Home() {
 
       {/* Main layout: sidebar + content */}
       <div className="flex flex-1 flex-col lg:flex-row">
-        <AppSidebar />
+        <div className="no-print">
+          <AppSidebar />
+        </div>
         <MainContent />
       </div>
     </div>
