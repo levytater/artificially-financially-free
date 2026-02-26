@@ -1,3 +1,5 @@
+import type Decimal from 'decimal.js'
+
 /**
  * Formats a number as Canadian currency.
  * @example formatCurrency(500000) => "$500,000"
@@ -15,6 +17,50 @@ export function formatCurrency(value: number): string {
   })
 
   return formatter.format(value)
+}
+
+/**
+ * Formats a Decimal as Canadian currency.
+ * @example formatCurrencyDecimal(new Decimal(500000)) => "$500,000"
+ * @example formatCurrencyDecimal(new Decimal(1250000), true) => "$1.3M"
+ */
+export function formatCurrencyDecimal(value: Decimal, compact = false): string {
+  const num = value.toNumber()
+
+  if (isNaN(num)) {
+    return '$0'
+  }
+
+  const formatter = new Intl.NumberFormat('en-CA', {
+    style: 'currency',
+    currency: 'CAD',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+    ...(compact && {
+      notation: 'compact',
+      compactDisplay: 'short',
+    }),
+  })
+
+  return formatter.format(num)
+}
+
+/**
+ * Formats a Decimal as a percentage with configurable decimal places.
+ * @example formatPercentageDecimal(new Decimal(5.5)) => "5.5%"
+ * @example formatPercentageDecimal(new Decimal(12.345), 2) => "12.35%"
+ */
+export function formatPercentageDecimal(
+  value: Decimal,
+  decimals = 1
+): string {
+  const num = value.toNumber()
+
+  if (isNaN(num)) {
+    return '0.0%'
+  }
+
+  return num.toFixed(decimals) + '%'
 }
 
 /**
