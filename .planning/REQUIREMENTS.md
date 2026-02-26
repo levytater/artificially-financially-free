@@ -51,8 +51,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Explanations & Education
 
-- [ ] **EDU-01**: Helper tooltip on every input field explaining what it means and why it matters for the rent-vs-buy decision
-- [ ] **EDU-02**: Plain-English verdict summary explaining the result, key cost drivers, and what would change the outcome
+- [x] **EDU-01**: Helper tooltip on every input field explaining what it means and why it matters for the rent-vs-buy decision
+- [x] **EDU-02**: Plain-English verdict summary explaining the result, key cost drivers, and what would change the outcome
 - [ ] **EDU-03**: Chart annotations explaining how to read each visualization and what the lines/bars represent
 - [ ] **EDU-04**: Pre-written explainers for key financial concepts (opportunity cost, CMHC insurance, semi-annual compounding, land transfer tax, marginal tax rates)
 - [ ] **EDU-05**: Simple mode includes beginner guidance on TFSA, RRSP, and Non-registered accounts -- what they are, key differences, and how to check contribution room
@@ -60,7 +60,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Design & UX
 
 - [ ] **UX-01**: Responsive layout that works on mobile (320px+) and desktop with touch-friendly input controls
-- [ ] **UX-02**: Clean, modern fintech UI with visual polish comparable to PWL Capital's calculator
+- [x] **UX-02**: Clean, modern fintech UI with visual polish comparable to PWL Capital's calculator
 - [ ] **UX-03**: Smooth chart animations when inputs change, with performance-safe degradation on mobile
 - [x] **UX-04**: Real-time calculation updates triggered as user adjusts any input (debounced for performance)
 
@@ -172,13 +172,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | VIZ-05 | Phase 6: Chart Visualizations | Pending |
 | VIZ-06 | Phase 6: Chart Visualizations | Pending |
 | UX-03 | Phase 6: Chart Visualizations | Pending |
-| EDU-01 | Phase 7: Explanations & Education | Pending |
-| EDU-02 | Phase 7: Explanations & Education | Pending |
+| EDU-01 | Phase 7: Explanations & Education | Complete |
+| EDU-02 | Phase 7: Explanations & Education | Complete |
 | EDU-03 | Phase 7: Explanations & Education | Pending |
 | EDU-04 | Phase 7: Explanations & Education | Pending |
 | EDU-05 | Phase 7: Explanations & Education | Pending |
 | UX-01 | Phase 8: Responsive Design & Polish | Pending |
-| UX-02 | Phase 8: Responsive Design & Polish | Pending |
+| UX-02 | Phase 8: Responsive Design & Polish | Complete |
 
 **Coverage:**
 - v1 requirements: 45 total

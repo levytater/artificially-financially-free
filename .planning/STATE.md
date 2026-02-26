@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 5.1 of 8 (Results Refinement & Audit Trail) — INSERTED decimal phase
-Plan: 0 of TBD in current phase (not yet planned)
-Status: Pending planning
-Last activity: 2026-02-25 -- Inserted Phase 5.1 gap-closure after Phase 5 approval
+Plan: 2 of 3 in current phase
+Status: In progress
+Last activity: 2026-02-26 -- Completed 05.1-02-PLAN.md (Audit breakdown table)
 
-Progress: [██████░░░░] 58% (roadmap structure updated for gap-closure)
+Progress: [██████░░░░] 60% (2 of 3 Phase 5.1 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 14
-- Average duration: 3.1 min
-- Total execution time: 0.73 hours
+- Total plans completed: 16
+- Average duration: 3.2 min
+- Total execution time: 0.84 hours
 
 **By Phase:**
 
@@ -32,9 +32,10 @@ Progress: [██████░░░░] 58% (roadmap structure updated for ga
 | 03 | 3 | 8 min | 2.7 min |
 | 04 | 3 | 9 min | 3.0 min |
 | 05 | 2 | 6 min | 3.0 min |
+| 05.1 | 2 | 7.5 min | 3.8 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 3 min, 4 min, 4 min, 2 min
+- Last 5 plans: 4 min, 2 min, 4 min, 4 min, 3.5 min
 - Trend: stable
 
 *Updated after each plan completion*
@@ -101,6 +102,11 @@ Recent decisions affecting current work:
 - [Phase 05]: useDeferredValue for year slider (smooth performance during dragging)
 - [Phase 05]: Side-by-side renter vs buyer columns in cost breakdown table
 - [Phase 05-02]: Visual verification checkpoint APPROVED - Phase 5.1 gap-closure phase to address 8 improvements (dollar advantage styling, income explanation, helper tooltips, audit/math breakdown tab, print/PDF, theme toggle UX)
+- [Phase 05.1]: 3-section table layout for audit breakdown (Home Equity Growth, Cost Comparison, Net Worth Progression)
+- [Phase 05.1]: Year 0 initial position row included in audit tables for context
+- [Phase 05.1-01]: InfoTooltip wraps Tooltip primitives without its own TooltipProvider - single provider at root prevents hydration issues
+- [Phase 05.1-01]: Dollar advantage card uses border-2 and text-3xl for visual emphasis as primary metric
+- [Phase 05.1-01]: Theme toggle shows action text (Light/Dark) not current state - reduces click confusion
 
 ### Pending Todos
 
@@ -114,6 +120,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-25
-Stopped at: Completed 05-02-PLAN.md (Visual verification checkpoint - APPROVED for Phase 5.1)
+Last session: 2026-02-26
+Stopped at: Completed 05.1-01-PLAN.md (Result tooltips and visual hierarchy)
 Resume file: None
