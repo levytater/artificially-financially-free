@@ -121,5 +121,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-26
-Stopped at: Completed 05.1-01-PLAN.md (Result tooltips and visual hierarchy)
+Stopped at: Completed 05.1-02-PLAN.md (Audit breakdown table)
 Resume file: None
